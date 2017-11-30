@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <form id="calk" name="calk">
+      Введите первое число:
+      <input name="first"  type="text" /><br /><br/>
+      <select name="sel"  size="1">
+          <option class="opt" value="+">+</option>
+          <option class="opt" value="-">-</option>
+          <option class="opt" value="*">*</option>
+          <option class="opt" value="/">/</option>
+      </select><br/><br/>
+      Введите второе число:
+      <input type="text" id="second"  onkeyup="return proverka(this)"; value=""  /><br />
+       <input type="button" id="submitButton"   value="Посчитать" onclick="calc(sel)"; return false; ><br/><br/>
+       <p id="out">Результат:</p>
+      </form>
+      <input id="four"  type="text" onchange="f1()">
+    <table id="GeoResults"></table>
+    
+    <input id="fice"  type="text" onchange="f2()">
+    <div id="getResult1"></div>
+</body>
+</html>
